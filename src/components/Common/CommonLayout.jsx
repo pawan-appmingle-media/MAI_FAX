@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../Header/Header";
+import { Outlet } from "react-router-dom";
+import Header from "./Header/Header";
 
 const CommonLayout = () => {
   return (
@@ -8,7 +9,9 @@ const CommonLayout = () => {
         <div>
           <Header />
         </div>
-        <div>Content</div>
+        <div>
+          <Outlet />
+        </div>
       </div>
     </>
   );

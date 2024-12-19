@@ -1,5 +1,5 @@
-// Import required dependencies
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [userId, setUserId] = useState("");
@@ -69,9 +69,9 @@ const Login = () => {
         </form>
         <p className="mt-4 text-sm text-center text-gray-600">
           Don't have an account?{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <Link to="#" className="text-blue-600 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
